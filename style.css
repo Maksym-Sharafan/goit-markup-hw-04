@@ -16,6 +16,9 @@
   --bg-hero-footer: #2f303a;
   --bg-section-team: #f5f4fa;
   --adress-text-color: rgba(255, 255, 255, 0.6);
+  --bg-icons-adv: #f5f4fa;
+  --icon-color-white: #fff;
+  --icon-color-gray: #afb1b8;
 }
 
 a {
@@ -232,8 +235,20 @@ body {
   color: var(--primary-text-color);
 }
 
+.wrapper-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--bg-icons-adv);
+  border-radius: 4px;
+}
+
 .advantages-icon {
-  display: inline-block;
+  width: 70px;
+  height: 70px;
 }
 
 /* activity */
@@ -305,7 +320,7 @@ body {
 
 .position {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 
   font-weight: 400;
   font-size: 16px;
@@ -313,6 +328,69 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+}
+
+.social-networks {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-icons-wr:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color-gray);
+}
+
+.social-icons:hover .social-icon,
+.social-icons:hover {
+  background-color: var(--accent-color);
+  fill: var(--icon-color-white);
+}
+
+/* clients */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  outline: 1px solid var(--icon-color-gray);
+  /* border-radius: 4px; */
+}
+
+.clients-wrapper:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-icon {
+  width: 170px;
+  height: 90px;
+  fill: var(--icon-color-gray);
 }
 
 /* footer */
@@ -324,6 +402,7 @@ body {
 }
 
 .footer .logo {
+  display: inline-block;
   color: var(--text-white);
 }
 
@@ -332,7 +411,7 @@ body {
 }
 
 .footer address {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .physical-addr {
@@ -353,6 +432,43 @@ body {
   letter-spacing: 0.03em;
 
   color: var(--adress-text-color);
+}
+
+.footer-container {
+  display: flex;
+}
+
+.social-links {
+  padding-top: 12px;
+  margin-left: 70px;
+}
+
+.ft-icons-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--text-white);
+}
+
+.ft-icons {
+  justify-content: start;
+}
+
+.ft-icons .social-icons {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.ft-icons .social-icons:hover {
+  background-color: var(--accent-color);
+}
+
+.ft-icons .social-icon {
+  fill: var(--icon-color-white);
 }
 
 /* portfolio */
@@ -410,6 +526,11 @@ body {
 .card {
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card:nth-child(3n) {
