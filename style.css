@@ -343,6 +343,7 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  color: var(--icon-color-gray);
 }
 
 .social-icons-wr:not(:last-child) {
@@ -352,13 +353,13 @@ body {
 .social-icon {
   width: 20px;
   height: 20px;
-  fill: var(--icon-color-gray);
+  fill: currentColor;
 }
 
-.social-icons:hover .social-icon,
-.social-icons:hover {
+.social-icons:hover,
+.social-icons:focus {
   background-color: var(--accent-color);
-  fill: var(--icon-color-white);
+  color: var(--icon-color-white);
 }
 
 /* clients */
@@ -379,18 +380,28 @@ body {
   align-items: center;
   width: 170px;
   height: 90px;
-  outline: 1px solid var(--icon-color-gray);
-  /* border-radius: 4px; */
 }
 
 .clients-wrapper:not(:last-child) {
   margin-right: 30px;
 }
 
+.clients-icons {
+  display: flex;
+  color: var(--icon-color-gray);
+  border: 1px solid;
+  border-radius: 4px;
+}
+
 .clients-icon {
   width: 170px;
   height: 90px;
-  fill: var(--icon-color-gray);
+  fill: currentColor;
+}
+
+.clients-icons:hover,
+.clients-icons:focus {
+  color: var(--accent-color);
 }
 
 /* footer */
@@ -461,14 +472,16 @@ body {
 
 .ft-icons .social-icons {
   background: rgba(255, 255, 255, 0.1);
+  color: var(--icon-color-white);
 }
 
-.ft-icons .social-icons:hover {
+.ft-icons .social-icons:hover,
+.ft-icons .social-icons:focus {
   background-color: var(--accent-color);
 }
 
 .ft-icons .social-icon {
-  fill: var(--icon-color-white);
+  fill: currentColor;
 }
 
 /* portfolio */
@@ -528,7 +541,8 @@ body {
   margin-bottom: 30px;
 }
 
-.card:hover {
+.card:hover,
+.card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
